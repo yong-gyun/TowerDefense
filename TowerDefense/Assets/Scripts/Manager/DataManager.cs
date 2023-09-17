@@ -29,8 +29,8 @@ public class DataManager
         EnemyStat.Add(EnemyType.QuickUnit, new EnemyStatData(EnemyType.QuickUnit, 20f, 20f, 5f, 1f, 7.5f, 5));
         EnemyStat.Add(EnemyType.FlyUnit, new EnemyStatData(EnemyType.FlyUnit, 10f, 20f, 5f, 1f, 5f, 8));;
         EnemyStat.Add(EnemyType.GoldUnit, new EnemyStatData(EnemyType.GoldUnit, 20f, 20f, 5f, 1f, 5f, 2));
-        EnemyStat.Add(EnemyType.MeleeAttackUnit, new EnemyStatData(EnemyType.MeleeAttackUnit, 20f, 20f, 5f, 1f, 5f, 2));
-        EnemyStat.Add(EnemyType.MeleeAttackUnit, new EnemyStatData(EnemyType.MeleeAttackUnit, 20f, 20f, 5f, 1f, 5f, 2));
+        EnemyStat.Add(EnemyType.MiddleBossUnit, new EnemyStatData(EnemyType.MiddleBossUnit, 20f, 20f, 5f, 1f, 5f, 2));
+        EnemyStat.Add(EnemyType.StageBossUnit, new EnemyStatData(EnemyType.StageBossUnit, 20f, 20f, 5f, 1f, 5f, 2));
     }
 
     void LoadBuildData()

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1588763938237082081}
   - component: {fileID: -6744671166673128006}
   m_Layer: 0
-  m_Name: MeleeAttack
+  m_Name: MeleeAttackUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

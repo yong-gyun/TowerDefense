@@ -22,8 +22,12 @@ public class EnemyController : MonoBehaviour
     protected NavMeshAgent _agent;
     
     [SerializeField] protected Define.EnemyState _state;
-
     bool _init;
+
+    private void Start()
+    {
+        Init();
+    }
 
     protected virtual bool Init()
     {
@@ -46,6 +50,7 @@ public class EnemyController : MonoBehaviour
 
         _agent.isStopped = false;
         _init = true;
+        _state = Define.EnemyState.Move;
         return true;
     }
 
@@ -80,6 +85,12 @@ public class EnemyController : MonoBehaviour
 
     public void SetStat()
     {
-        
+        Data.EnemyStatData stat = Managers.Data.EnemyStat[Type];
+        _maxHp = stat.maxHp;
+        _hp = stat.hp;
+        _attack = stat.attack;
+        _attackSpeed = stat.attackSpeed;
+        _moveSpeed = stat.moveSpeed;
+        _gold = stat.gold;
     }
 }
